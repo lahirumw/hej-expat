@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swedish for Expats – Lesson 7: At the Doctor</title>
+<meta name="description" content="Learn Swedish health phrases. Describe symptoms, book a doctor's appointment and navigate Swedish healthcare as an expat.">
+<style>
+  :root{--blue:#006AA7;--yellow:#FECC02;--yellow-soft:#FFF8D6;--ink:#1A1A2E;--ink-soft:#4A4A6A;--surface:#FFFFFF;--bg:#F7F9FC;--border:#E2E8F0;--green:#1E7D5A;--green-soft:#E8F5EE;--radius:10px;--shadow:0 2px 12px rgba(0,106,167,0.08);}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Georgia',serif;background:var(--bg);color:var(--ink);line-height:1.75;}
+  .wrap{max-width:780px;margin:0 auto;padding:0 20px 60px;}
+  .hero{background:var(--blue);color:#fff;padding:56px 20px 48px;text-align:center;}
+  .hero::before{content:"🏥";font-size:80px;display:block;margin-bottom:16px;line-height:1;}
+  .series-label{font-family:'Arial',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;background:var(--yellow);color:var(--ink);display:inline-block;padding:4px 12px;border-radius:4px;margin-bottom:20px;}
+  .hero h1{font-size:clamp(26px,5vw,40px);font-weight:700;line-height:1.25;margin-bottom:16px;max-width:620px;margin-left:auto;margin-right:auto;}
+  .hero p{font-size:17px;opacity:0.9;max-width:520px;margin:0 auto 24px;font-family:'Arial',sans-serif;}
+  .hero .meta{font-family:'Arial',sans-serif;font-size:13px;opacity:0.7;}
+  .lesson-nav{display:flex;justify-content:space-between;align-items:center;background:var(--surface);border-bottom:1px solid var(--border);padding:12px 20px;font-family:'Arial',sans-serif;font-size:13px;flex-wrap:wrap;gap:8px;}
+  .lesson-nav a{color:var(--blue);text-decoration:none;font-weight:600;}
+  .lesson-nav .current{color:var(--ink-soft);}
+  section{margin-top:48px;}
+  h2{font-size:24px;color:var(--blue);margin-bottom:16px;padding-bottom:8px;border-bottom:3px solid var(--yellow);display:inline-block;}
+  p{margin-bottom:14px;font-size:16.5px;}
+  .expat-note{background:var(--yellow-soft);border-left:4px solid var(--yellow);border-radius:0 var(--radius) var(--radius) 0;padding:18px 22px;margin:28px 0;font-family:'Arial',sans-serif;font-size:15px;color:var(--ink-soft);}
+  .expat-note strong{color:var(--ink);}
+  .tip-box{background:#EEF4FF;border-left:4px solid var(--blue);border-radius:0 var(--radius) var(--radius) 0;padding:16px 20px;margin:20px 0;font-family:'Arial',sans-serif;font-size:15px;}
+  .tip-box strong{color:var(--blue);}
+  .body-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-top:20px;}
+  .body-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 12px;text-align:center;box-shadow:var(--shadow);}
+  .body-card .icon{font-size:28px;margin-bottom:6px;}
+  .body-card .swedish{font-size:17px;font-weight:700;color:var(--blue);}
+  .body-card .english{font-family:'Arial',sans-serif;font-size:13px;color:var(--ink-soft);}
+  .vocab-table{width:100%;border-collapse:collapse;margin-top:20px;background:var(--surface);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);font-family:'Arial',sans-serif;font-size:15px;}
+  .vocab-table thead{background:var(--blue);color:#fff;}
+  .vocab-table th,.vocab-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--border);}
+  .vocab-table td:first-child{font-weight:700;color:var(--blue);}
+  .vocab-table tr:last-child td{border-bottom:none;}
+  .vocab-table tr:nth-child(even){background:var(--bg);}
+  .conversation{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px 28px;box-shadow:var(--shadow);margin-top:20px;font-family:'Arial',sans-serif;}
+  .conversation .line{margin-bottom:12px;font-size:15.5px;}
+  .conversation .speaker{font-weight:700;color:var(--blue);}
+  .conversation .translation{font-size:13px;color:var(--ink-soft);font-style:italic;margin-top:2px;}
+  .conversation hr{border:none;border-top:1px solid var(--border);margin:16px 0;}
+  .quiz-block{background:var(--green-soft);border:1px solid #B2DFCE;border-radius:var(--radius);padding:24px 28px;margin-top:24px;font-family:'Arial',sans-serif;}
+  .quiz-block h3{color:var(--green);margin-top:0;font-size:18px;}
+  .quiz-question{margin:14px 0 6px;font-weight:600;font-size:15px;}
+  .quiz-answer{background:var(--surface);border:1px solid #B2DFCE;border-radius:6px;padding:10px 14px;font-size:15px;cursor:pointer;user-select:none;}
+  .quiz-answer::after{content:"👁 Tap to reveal";font-size:12px;color:var(--green);margin-left:8px;}
+  .quiz-answer.revealed::after{content:"";}
+  .quiz-answer .hidden-text{display:none;font-weight:700;color:var(--green);}
+  .quiz-answer.revealed .hidden-text{display:inline;}
+  .quiz-answer .placeholder{color:var(--ink-soft);}
+  .quiz-answer.revealed .placeholder{display:none;}
+  .progress-bar{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px 22px;margin-top:36px;font-family:'Arial',sans-serif;font-size:14px;}
+  .progress-label{font-weight:700;margin-bottom:10px;}
+  .bar-track{background:var(--border);border-radius:99px;height:10px;overflow:hidden;}
+  .bar-fill{background:linear-gradient(90deg,var(--blue),#00A3E0);width:70%;height:100%;border-radius:99px;}
+  .bar-note{margin-top:8px;color:var(--ink-soft);}
+  .next-lesson{background:var(--blue);color:#fff;border-radius:var(--radius);padding:28px 32px;margin-top:48px;font-family:'Arial',sans-serif;}
+  .next-lesson h2{color:var(--yellow);font-size:20px;}
+  .next-lesson ul{margin:12px 0 0 20px;}
+  .next-lesson li{margin-bottom:6px;font-size:15px;}
+  .next-lesson a{display:inline-block;margin-top:20px;background:var(--yellow);color:var(--ink);font-weight:700;padding:10px 24px;border-radius:6px;text-decoration:none;font-size:15px;}
+  @media(max-width:540px){.body-grid{grid-template-columns:repeat(3,1fr);}.hero h1{font-size:24px;}}
+</style>
+</head>
+<body>
+<div class="lesson-nav">
+  <a href="lesson-6.html">← Lesson 6: Getting Around</a>
+  <span class="current">📖 Lesson 7: At the Doctor</span>
+  <a href="lesson-8.html">Lesson 8 →</a>
+</div>
+<div class="hero">
+  <span class="series-label">Swedish for Expats · Lesson 7 of 10</span>
+  <h1>Swedish at the Doctor — Health &amp; Symptoms</h1>
+  <p>Describe how you feel, book a vårdcentral appointment, and understand what the doctor tells you.</p>
+  <div class="meta">By Lahiru &nbsp;·&nbsp; Expat in Sweden &nbsp;·&nbsp; 12 min read</div>
+</div>
+<div class="wrap">
+  <div class="progress-bar">
+    <div class="progress-label">📚 Swedish for Expats — Course Progress</div>
+    <div class="bar-track"><div class="bar-fill"></div></div>
+    <div class="bar-note">Lesson 7 of 10 &nbsp;·&nbsp; 70% done — the finish line is in sight!</div>
+  </div>
+  <section>
+    <div class="expat-note">
+      <strong>👋 From my experience:</strong> Swedish healthcare is excellent but the system is different from many countries. You go to a <em>vårdcentral</em> (health centre) first, not a hospital. Most doctors speak English, but receptionists may not — and the phone booking system is entirely in Swedish. This lesson is one of the most practical in the whole course.
+    </div>
+    <p><strong>Time to complete:</strong> 12–15 minutes &nbsp;·&nbsp; <strong>Words learned:</strong> Body parts + 15 health phrases</p>
+  </section>
+  <section>
+    <h2>Parts of the Body</h2>
+    <div class="body-grid">
+      <div class="body-card"><div class="icon">🗣️</div><div class="swedish">Huvud</div><div class="english">Head</div></div>
+      <div class="body-card"><div class="icon">👁️</div><div class="swedish">Öga</div><div class="english">Eye</div></div>
+      <div class="body-card"><div class="icon">👂</div><div class="swedish">Öra</div><div class="english">Ear</div></div>
+      <div class="body-card"><div class="icon">👃</div><div class="swedish">Näsa</div><div class="english">Nose</div></div>
+      <div class="body-card"><div class="icon">😮</div><div class="swedish">Mun</div><div class="english">Mouth</div></div>
+      <div class="body-card"><div class="icon">🦷</div><div class="swedish">Tand</div><div class="english">Tooth</div></div>
+      <div class="body-card"><div class="icon">🤧</div><div class="swedish">Hals</div><div class="english">Throat</div></div>
+      <div class="body-card"><div class="icon">🫁</div><div class="swedish">Rygg</div><div class="english">Back</div></div>
+      <div class="body-card"><div class="icon">🫀</div><div class="swedish">Mage</div><div class="english">Stomach</div></div>
+      <div class="body-card"><div class="icon">💪</div><div class="swedish">Arm</div><div class="english">Arm</div></div>
+      <div class="body-card"><div class="icon">🦵</div><div class="swedish">Ben</div><div class="english">Leg</div></div>
+      <div class="body-card"><div class="icon">🦶</div><div class="swedish">Fot</div><div class="english">Foot</div></div>
+    </div>
+    <div class="tip-box" style="margin-top:20px;"><strong>💡 Note:</strong> <em>Ben</em> means both "leg" and "bone" in Swedish depending on context. In a medical setting it usually means leg. The word for bone specifically is also <em>ben</em> — context makes it clear.</div>
+  </section>
+  <section>
+    <h2>Describing Symptoms</h2>
+    <table class="vocab-table">
+      <thead><tr><th>Swedish</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>Jag mår inte bra.</td><td>I don't feel well.</td></tr>
+        <tr><td>Jag har ont i huvudet.</td><td>I have a headache.</td></tr>
+        <tr><td>Jag har ont i halsen.</td><td>I have a sore throat.</td></tr>
+        <tr><td>Jag har ont i magen.</td><td>I have a stomach ache.</td></tr>
+        <tr><td>Jag har feber.</td><td>I have a fever.</td></tr>
+        <tr><td>Jag är förkyld.</td><td>I have a cold.</td></tr>
+        <tr><td>Jag är trött.</td><td>I am tired.</td></tr>
+        <tr><td>Jag har hosta.</td><td>I have a cough.</td></tr>
+        <tr><td>Det gör ont här.</td><td>It hurts here.</td></tr>
+        <tr><td>Sedan [number] dagar.</td><td>For [number] days.</td></tr>
+      </tbody>
+    </table>
+    <div class="tip-box"><strong>💡 Key pattern:</strong> "Jag har ont i [body part]" = I have pain in [body part]. This pattern works for almost any body pain. Learn the body parts above and you can describe almost any symptom.</div>
+  </section>
+  <section>
+    <h2>Healthcare System Words</h2>
+    <table class="vocab-table">
+      <thead><tr><th>Swedish</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>Vårdcentral</td><td>Health centre (go here first, not hospital)</td></tr>
+        <tr><td>Läkare / Doktor</td><td>Doctor</td></tr>
+        <tr><td>Sjuksköterska</td><td>Nurse</td></tr>
+        <tr><td>Apotek</td><td>Pharmacy</td></tr>
+        <tr><td>Recept</td><td>Prescription</td></tr>
+        <tr><td>Tid / Tidsbokning</td><td>Appointment / Booking</td></tr>
+        <tr><td>Akuten</td><td>Emergency room</td></tr>
+        <tr><td>1177</td><td>Swedish healthcare helpline (24/7, often in English)</td></tr>
+      </tbody>
+    </table>
+    <div class="expat-note"><strong>🌟 Expat essential:</strong> Call <strong>1177</strong> any time you are unsure if you need a doctor. Nurses give free medical advice. Many speak English. It is one of Sweden's best services and most expats don't know about it.</div>
+  </section>
+  <section>
+    <h2>At the Vårdcentral — A Conversation</h2>
+    <div class="conversation">
+      <div class="line"><span class="speaker">Lahiru:</span> Hej, jag skulle vilja boka en tid hos en läkare.<div class="translation">Hello, I would like to book an appointment with a doctor.</div></div>
+      <div class="line"><span class="speaker">Receptionist:</span> Vad gäller det?<div class="translation">What is it regarding?</div></div>
+      <div class="line"><span class="speaker">Lahiru:</span> Jag mår inte bra. Jag har ont i halsen och feber sedan tre dagar.<div class="translation">I don't feel well. I have had a sore throat and fever for three days.</div></div>
+      <div class="line"><span class="speaker">Receptionist:</span> Vi har en ledig tid på torsdag klockan tio. Passar det?<div class="translation">We have a free slot on Thursday at ten o'clock. Does that work?</div></div>
+      <div class="line"><span class="speaker">Lahiru:</span> Ja, det passar bra. Tack!<div class="translation">Yes, that works fine. Thank you!</div></div>
+      <hr>
+      <div style="font-size:13px;color:var(--ink-soft);font-style:italic;">New words: boka = to book · ledig tid = free slot · passar det = does that work? · det passar bra = that works well</div>
+    </div>
+  </section>
+  <section>
+    <div class="quiz-block">
+      <h3>✏️ Quick Practice</h3>
+      <div class="quiz-question">1. How do you say "I have a headache"?</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')"><span class="placeholder">Your answer...</span><span class="hidden-text">Jag har ont i huvudet.</span></div>
+      <div class="quiz-question">2. What is a "vårdcentral"?</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')"><span class="placeholder">Your answer...</span><span class="hidden-text">A health centre — the first place you go in Sweden for medical care, not the hospital.</span></div>
+      <div class="quiz-question">3. How do you say "I have a cold"?</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')"><span class="placeholder">Your answer...</span><span class="hidden-text">Jag är förkyld.</span></div>
+      <div class="quiz-question">4. What number do you call for free healthcare advice in Sweden?</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')"><span class="placeholder">Your answer...</span><span class="hidden-text">1177 — available 24/7, often in English too.</span></div>
+    </div>
+  </section>
+  <section>
+    <h2>Your Challenge This Week</h2>
+    <div class="expat-note">
+      <strong>🎯 Try this:</strong> Register at your nearest <em>vårdcentral</em> if you haven't already — it's free and straightforward. While you're there, practice saying your address and personal details in Swedish. It's also a great way to use Lessons 1 through 4 in a real setting.
+    </div>
+  </section>
+  <div class="next-lesson">
+    <h2>Coming Up — Lesson 8: At Work &amp; in Meetings</h2>
+    <ul>
+      <li>Swedish workplace culture — lagom and fika</li>
+      <li>Meeting phrases — Ska vi börja? Let's start?</li>
+      <li>Agreeing, disagreeing politely</li>
+      <li>Email sign-offs in Swedish</li>
+    </ul>
+    <a href="lesson-8.html">Go to Lesson 8 →</a>
+  </div>
+</div>
+</body>
+</html>

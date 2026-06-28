@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swedish for Expats – Lesson 3: Numbers 1–20</title>
+<meta name="description" content="Learn Swedish numbers 1 to 20. Say your age, understand prices, and navigate everyday life in Sweden with confidence.">
+<meta name="keywords" content="Swedish numbers, learn Swedish for expats, Swedish 1 to 20, Swedish beginner, numbers in Swedish">
+<style>
+  :root {
+    --blue:#006AA7;--yellow:#FECC02;--yellow-soft:#FFF8D6;--ink:#1A1A2E;
+    --ink-soft:#4A4A6A;--surface:#FFFFFF;--bg:#F7F9FC;--border:#E2E8F0;
+    --green:#1E7D5A;--green-soft:#E8F5EE;--radius:10px;--shadow:0 2px 12px rgba(0,106,167,0.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Georgia',serif;background:var(--bg);color:var(--ink);line-height:1.75;}
+  .wrap{max-width:780px;margin:0 auto;padding:0 20px 60px;}
+  .hero{background:var(--blue);color:#fff;padding:56px 20px 48px;text-align:center;}
+  .hero::before{content:"🔢";font-size:80px;display:block;margin-bottom:16px;line-height:1;}
+  .series-label{font-family:'Arial',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;background:var(--yellow);color:var(--ink);display:inline-block;padding:4px 12px;border-radius:4px;margin-bottom:20px;}
+  .hero h1{font-size:clamp(26px,5vw,40px);font-weight:700;line-height:1.25;margin-bottom:16px;max-width:620px;margin-left:auto;margin-right:auto;}
+  .hero p{font-size:17px;opacity:0.9;max-width:520px;margin:0 auto 24px;font-family:'Arial',sans-serif;}
+  .hero .meta{font-family:'Arial',sans-serif;font-size:13px;opacity:0.7;}
+  .lesson-nav{display:flex;justify-content:space-between;align-items:center;background:var(--surface);border-bottom:1px solid var(--border);padding:12px 20px;font-family:'Arial',sans-serif;font-size:13px;flex-wrap:wrap;gap:8px;}
+  .lesson-nav a{color:var(--blue);text-decoration:none;font-weight:600;}
+  .lesson-nav a:hover{text-decoration:underline;}
+  .lesson-nav .current{color:var(--ink-soft);}
+  section{margin-top:48px;}
+  h2{font-size:24px;color:var(--blue);margin-bottom:16px;padding-bottom:8px;border-bottom:3px solid var(--yellow);display:inline-block;}
+  p{margin-bottom:14px;font-size:16.5px;}
+  .expat-note{background:var(--yellow-soft);border-left:4px solid var(--yellow);border-radius:0 var(--radius) var(--radius) 0;padding:18px 22px;margin:28px 0;font-family:'Arial',sans-serif;font-size:15px;color:var(--ink-soft);}
+  .expat-note strong{color:var(--ink);}
+  .tip-box{background:#EEF4FF;border-left:4px solid var(--blue);border-radius:0 var(--radius) var(--radius) 0;padding:16px 20px;margin:20px 0;font-family:'Arial',sans-serif;font-size:15px;}
+  .tip-box strong{color:var(--blue);}
+  .number-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px;margin-top:20px;}
+  .number-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px 12px;text-align:center;box-shadow:var(--shadow);cursor:pointer;transition:transform 0.15s;}
+  .number-card:hover{transform:translateY(-2px);}
+  .number-card .num{font-size:32px;font-weight:700;color:var(--blue);}
+  .number-card .swedish{font-size:16px;font-weight:700;margin:4px 0;}
+  .number-card .pron{font-size:12px;color:var(--ink-soft);font-family:'Arial',sans-serif;}
+  .vocab-table{width:100%;border-collapse:collapse;margin-top:20px;background:var(--surface);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);font-family:'Arial',sans-serif;font-size:15px;}
+  .vocab-table thead{background:var(--blue);color:#fff;}
+  .vocab-table th,.vocab-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--border);}
+  .vocab-table td:first-child{font-weight:700;color:var(--blue);}
+  .vocab-table tr:last-child td{border-bottom:none;}
+  .vocab-table tr:nth-child(even){background:var(--bg);}
+  .quiz-block{background:var(--green-soft);border:1px solid #B2DFCE;border-radius:var(--radius);padding:24px 28px;margin-top:24px;font-family:'Arial',sans-serif;}
+  .quiz-block h3{color:var(--green);margin-top:0;font-size:18px;}
+  .quiz-question{margin:14px 0 6px;font-weight:600;font-size:15px;}
+  .quiz-answer{background:var(--surface);border:1px solid #B2DFCE;border-radius:6px;padding:10px 14px;font-size:15px;cursor:pointer;user-select:none;}
+  .quiz-answer::after{content:"👁 Tap to reveal";font-size:12px;color:var(--green);margin-left:8px;}
+  .quiz-answer.revealed::after{content:"";}
+  .quiz-answer .hidden-text{display:none;font-weight:700;color:var(--green);}
+  .quiz-answer.revealed .hidden-text{display:inline;}
+  .quiz-answer .placeholder{color:var(--ink-soft);}
+  .quiz-answer.revealed .placeholder{display:none;}
+  .progress-bar{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px 22px;margin-top:36px;font-family:'Arial',sans-serif;font-size:14px;}
+  .progress-label{font-weight:700;margin-bottom:10px;color:var(--ink);}
+  .bar-track{background:var(--border);border-radius:99px;height:10px;overflow:hidden;}
+  .bar-fill{background:linear-gradient(90deg,var(--blue),#00A3E0);width:30%;height:100%;border-radius:99px;}
+  .bar-note{margin-top:8px;color:var(--ink-soft);}
+  .next-lesson{background:var(--blue);color:#fff;border-radius:var(--radius);padding:28px 32px;margin-top:48px;font-family:'Arial',sans-serif;}
+  .next-lesson h2{color:var(--yellow);border-bottom-color:var(--yellow);font-size:20px;}
+  .next-lesson ul{margin:12px 0 0 20px;}
+  .next-lesson li{margin-bottom:6px;font-size:15px;}
+  .next-lesson a{display:inline-block;margin-top:20px;background:var(--yellow);color:var(--ink);font-weight:700;padding:10px 24px;border-radius:6px;text-decoration:none;font-family:'Arial',sans-serif;font-size:15px;}
+  /* Number game */
+  .number-game{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);margin-top:20px;text-align:center;font-family:'Arial',sans-serif;}
+  .game-number{font-size:72px;font-weight:700;color:var(--blue);margin:12px 0;}
+  .game-input{border:2px solid var(--border);border-radius:6px;padding:10px 16px;font-size:18px;width:200px;text-align:center;outline:none;}
+  .game-input:focus{border-color:var(--blue);}
+  .game-btn{background:var(--blue);color:#fff;border:none;border-radius:6px;padding:10px 24px;font-size:16px;cursor:pointer;margin-left:8px;}
+  .game-result{margin-top:14px;font-size:18px;font-weight:700;min-height:28px;}
+  .game-score{font-size:14px;color:var(--ink-soft);margin-top:8px;}
+  @media(max-width:540px){.number-grid{grid-template-columns:repeat(4,1fr);}  .hero h1{font-size:24px;}}
+</style>
+</head>
+<body>
+<div class="lesson-nav">
+  <a href="lesson-2.html">← Lesson 2: Introductions</a>
+  <span class="current">📖 Lesson 3: Numbers 1–20</span>
+  <a href="lesson-4.html">Lesson 4 →</a>
+</div>
+<div class="hero">
+  <span class="series-label">Swedish for Expats · Lesson 3 of 10</span>
+  <h1>Swedish Numbers 1–20</h1>
+  <p>Prices, ages, floor numbers, bus routes — numbers are everywhere. Learn them once and use them every day.</p>
+  <div class="meta">By Lahiru &nbsp;·&nbsp; Expat in Sweden &nbsp;·&nbsp; 10 min read</div>
+</div>
+<div class="wrap">
+  <div class="progress-bar">
+    <div class="progress-label">📚 Swedish for Expats — Course Progress</div>
+    <div class="bar-track"><div class="bar-fill"></div></div>
+    <div class="bar-note">Lesson 3 of 10 &nbsp;·&nbsp; You are 30% through the course!</div>
+  </div>
+  <section>
+    <div class="expat-note">
+      <strong>👋 From my experience:</strong> My first week in Sweden I couldn't understand the floor number in the lift, the bus route number called out loud, or the price at the deli counter. Numbers seem simple but they trip up almost every new expat. This lesson fixes that fast.
+    </div>
+    <p>Numbers in Swedish follow a very consistent pattern after 13. Once you learn 1–12 by heart, the rest almost build themselves. Let's go.</p>
+    <p><strong>Time to complete:</strong> 10–15 minutes &nbsp;·&nbsp; <strong>Words learned:</strong> 20 numbers + bonus phrases</p>
+  </section>
+  <section>
+    <h2>Numbers 1–20</h2>
+    <p>Click any card to highlight it. Say the Swedish word out loud as you go.</p>
+    <div class="number-grid">
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">1</div><div class="swedish">ett</div><div class="pron">et</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">2</div><div class="swedish">två</div><div class="pron">tvaw</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">3</div><div class="swedish">tre</div><div class="pron">treh</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">4</div><div class="swedish">fyra</div><div class="pron">fee-ra</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">5</div><div class="swedish">fem</div><div class="pron">fem</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">6</div><div class="swedish">sex</div><div class="pron">sex</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">7</div><div class="swedish">sju</div><div class="pron">shoo</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">8</div><div class="swedish">åtta</div><div class="pron">ot-a</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">9</div><div class="swedish">nio</div><div class="pron">nee-o</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">10</div><div class="swedish">tio</div><div class="pron">tee-o</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">11</div><div class="swedish">elva</div><div class="pron">el-va</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">12</div><div class="swedish">tolv</div><div class="pron">tolv</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">13</div><div class="swedish">tretton</div><div class="pron">tret-on</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">14</div><div class="swedish">fjorton</div><div class="pron">fyoor-ton</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">15</div><div class="swedish">femton</div><div class="pron">fem-ton</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">16</div><div class="swedish">sexton</div><div class="pron">sex-ton</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">17</div><div class="swedish">sjutton</div><div class="pron">shut-on</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">18</div><div class="swedish">arton</div><div class="pron">ar-ton</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">19</div><div class="swedish">nitton</div><div class="pron">nit-on</div></div>
+      <div class="number-card" onclick="this.style.background=this.style.background?'':'#EEF4FF'"><div class="num">20</div><div class="swedish">tjugo</div><div class="pron">shoo-go</div></div>
+    </div>
+    <div class="tip-box" style="margin-top:20px;">
+      <strong>💡 Pattern tip:</strong> Notice that 13–19 all end in <em>-ton</em> (like English "-teen"). And <em>sju</em> (7) is pronounced "shoo" — one of the trickiest sounds in Swedish. Practice that one separately.
+    </div>
+  </section>
+  <section>
+    <h2>Test Yourself — Number Game</h2>
+    <p>A number will appear. Type the Swedish word and check your answer.</p>
+    <div class="number-game">
+      <div style="font-size:15px;color:var(--ink-soft);margin-bottom:8px;">What is this number in Swedish?</div>
+      <div class="game-number" id="gameNum">7</div>
+      <div>
+        <input class="game-input" id="gameInput" type="text" placeholder="Type Swedish..." onkeydown="if(event.key==='Enter')checkAnswer()">
+        <button class="game-btn" onclick="checkAnswer()">Check</button>
+      </div>
+      <div class="game-result" id="gameResult"></div>
+      <div class="game-score" id="gameScore">Score: 0 / 0</div>
+      <button onclick="nextNumber()" style="margin-top:12px;background:var(--green);color:#fff;border:none;border-radius:6px;padding:8px 20px;cursor:pointer;font-size:14px;">Next number →</button>
+    </div>
+    <script>
+      const nums={1:'ett',2:'två',3:'tre',4:'fyra',5:'fem',6:'sex',7:'sju',8:'åtta',9:'nio',10:'tio',11:'elva',12:'tolv',13:'tretton',14:'fjorton',15:'femton',16:'sexton',17:'sjutton',18:'arton',19:'nitton',20:'tjugo'};
+      let current=7,correct=0,total=0;
+      function nextNumber(){current=Math.floor(Math.random()*20)+1;document.getElementById('gameNum').textContent=current;document.getElementById('gameInput').value='';document.getElementById('gameResult').textContent='';document.getElementById('gameInput').focus();}
+      function checkAnswer(){const ans=document.getElementById('gameInput').value.trim().toLowerCase();const right=nums[current];total++;if(ans===right){correct++;document.getElementById('gameResult').innerHTML='<span style="color:var(--green)">✅ Correct! '+right+'</span>';}else{document.getElementById('gameResult').innerHTML='<span style="color:#C0392B">❌ It\'s <strong>'+right+'</strong></span>';}document.getElementById('gameScore').textContent='Score: '+correct+' / '+total;}
+    </script>
+  </section>
+  <section>
+    <h2>Everyday Uses — Numbers in Real Life</h2>
+    <table class="vocab-table">
+      <thead><tr><th>Situation</th><th>Swedish</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>Your age</td><td>Jag är [number] år.</td><td>I am [age] years old.</td></tr>
+        <tr><td>Price at a shop</td><td>Det kostar [number] kronor.</td><td>It costs [number] crowns.</td></tr>
+        <tr><td>Floor number</td><td>Våning [number].</td><td>Floor [number].</td></tr>
+        <tr><td>Bus route</td><td>Buss nummer [number].</td><td>Bus number [number].</td></tr>
+        <tr><td>Quantity</td><td>Jag vill ha [number] stycken.</td><td>I would like [number] pieces.</td></tr>
+        <tr><td>Phone number digit</td><td>Mitt nummer är…</td><td>My number is…</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <div class="quiz-block">
+      <h3>✏️ Quick Practice</h3>
+      <p style="font-size:14px;color:var(--ink-soft);">Tap to reveal each answer.</p>
+      <div class="quiz-question">1. How do you say 7 in Swedish?</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')"><span class="placeholder">Your answer...</span><span class="hidden-text">sju</span></div>
+      <div class="quiz-question">2. How do you say 15 in Swedish?</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')"><span class="placeholder">Your answer...</span><span class="hidden-text">femton</span></div>
+      <div class="quiz-question">3. I am 32 years old.</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')"><span class="placeholder">Your answer...</span><span class="hidden-text">Jag är trettiotvå år. (you'll learn 21–100 soon!)</span></div>
+      <div class="quiz-question">4. It costs 20 crowns.</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')"><span class="placeholder">Your answer...</span><span class="hidden-text">Det kostar tjugo kronor.</span></div>
+    </div>
+  </section>
+  <section>
+    <h2>Your Challenge This Week</h2>
+    <div class="expat-note">
+      <strong>🎯 Try this:</strong> Every time you see a number this week — on a receipt, a door, a bus — say it out loud in Swedish. Just the number. That's it. By day 7, you'll have said them hundreds of times without even studying.
+    </div>
+  </section>
+  <div class="next-lesson">
+    <h2>Coming Up — Lesson 4: Days &amp; Time</h2>
+    <ul>
+      <li>Days of the week — måndag, tisdag…</li>
+      <li>What time is it? — Vad är klockan?</li>
+      <li>Booking appointments and meetings</li>
+      <li>Telling someone when you are free</li>
+    </ul>
+    <a href="lesson-4.html">Go to Lesson 4 →</a>
+  </div>
+</div>
+</body>
+</html>
