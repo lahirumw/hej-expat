@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO META TAGS — paste these into your WordPress SEO plugin (Yoast / RankMath) -->
+<title>Swedish for Expats – Lesson 1: Greetings You'll Use from Day One</title>
+<meta name="description" content="Moving to Sweden? Learn the Swedish greetings you'll actually need — Hej, God morgon, Tack and more. A practical lesson series written by an expat, for expats.">
+<meta name="keywords" content="learn Swedish for expats, Swedish greetings for beginners, basic Swedish words, Swedish for newcomers, move to Sweden language tips">
+
+<!-- Open Graph (for social sharing) -->
+<meta property="og:title" content="Swedish for Expats – Lesson 1: Greetings You'll Use from Day One">
+<meta property="og:description" content="Moving to Sweden? Start here. Learn the Swedish greetings you'll need at the door, at work, and at the supermarket.">
+<meta property="og:type" content="article">
+
+<style>
+  /* ── Design tokens ── */
+  :root {
+    --blue:      #006AA7;   /* Swedish flag blue */
+    --yellow:    #FECC02;   /* Swedish flag yellow */
+    --yellow-soft: #FFF8D6;
+    --ink:       #1A1A2E;
+    --ink-soft:  #4A4A6A;
+    --surface:   #FFFFFF;
+    --bg:        #F7F9FC;
+    --border:    #E2E8F0;
+    --green:     #1E7D5A;
+    --green-soft:#E8F5EE;
+    --radius:    10px;
+    --shadow:    0 2px 12px rgba(0,106,167,0.08);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Georgia', serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.75;
+  }
+
+  /* ── Layout ── */
+  .wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    background: var(--blue);
+    color: #fff;
+    padding: 56px 20px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "🇸🇪";
+    font-size: 80px;
+    display: block;
+    margin-bottom: 16px;
+    line-height: 1;
+  }
+  .hero .series-label {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: var(--yellow);
+    color: var(--ink);
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: clamp(26px, 5vw, 40px);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 16px;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero p {
+    font-size: 17px;
+    opacity: 0.9;
+    max-width: 520px;
+    margin: 0 auto 24px;
+    font-family: 'Arial', sans-serif;
+  }
+  .hero .meta {
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    opacity: 0.7;
+  }
+
+  /* ── Section spacing ── */
+  section { margin-top: 48px; }
+
+  h2 {
+    font-size: 24px;
+    color: var(--blue);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid var(--yellow);
+    display: inline-block;
+  }
+
+  h3 {
+    font-size: 19px;
+    margin: 28px 0 10px;
+    color: var(--ink);
+  }
+
+  p { margin-bottom: 14px; font-size: 16.5px; }
+
+  /* ── Personal note box ── */
+  .expat-note {
+    background: var(--yellow-soft);
+    border-left: 4px solid var(--yellow);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 18px 22px;
+    margin: 28px 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    color: var(--ink-soft);
+  }
+  .expat-note strong { color: var(--ink); }
+
+  /* ── Word cards ── */
+  .word-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .word-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 18px;
+    box-shadow: var(--shadow);
+    transition: transform 0.15s;
+  }
+  .word-card:hover { transform: translateY(-2px); }
+  .word-card .swedish {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 4px;
+  }
+  .word-card .english {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 8px;
+  }
+  .word-card .pronunciation {
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    background: var(--yellow-soft);
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #7A6000;
+    margin-bottom: 10px;
+  }
+  .word-card .example {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
+    margin-top: 4px;
+  }
+
+  /* ── Vocabulary table ── */
+  .vocab-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: var(--surface);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+  }
+  .vocab-table thead {
+    background: var(--blue);
+    color: #fff;
+  }
+  .vocab-table th, .vocab-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  .vocab-table td:first-child { font-weight: 700; color: var(--blue); }
+  .vocab-table tr:last-child td { border-bottom: none; }
+  .vocab-table tr:nth-child(even) { background: var(--bg); }
+
+  /* ── Conversation box ── */
+  .conversation {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    box-shadow: var(--shadow);
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  .conversation .line { margin-bottom: 10px; font-size: 15.5px; }
+  .conversation .speaker { font-weight: 700; color: var(--blue); }
+  .conversation .translation { font-size: 13px; color: var(--ink-soft); font-style: italic; }
+  .conversation hr { border: none; border-top: 1px solid var(--border); margin: 14px 0; }
+
+  /* ── Quiz ── */
+  .quiz-block {
+    background: var(--green-soft);
+    border: 1px solid #B2DFCE;
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin-top: 24px;
+    font-family: 'Arial', sans-serif;
+  }
+  .quiz-block h3 { color: var(--green); margin-top: 0; font-size: 18px; }
+  .quiz-question { margin: 14px 0 6px; font-weight: 600; font-size: 15px; }
+  .quiz-answer {
+    background: var(--surface);
+    border: 1px solid #B2DFCE;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 15px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+  }
+  .quiz-answer::after {
+    content: "👁 Tap to reveal";
+    font-size: 12px;
+    color: var(--green);
+    margin-left: 8px;
+  }
+  .quiz-answer.revealed::after { content: ""; }
+  .quiz-answer .hidden-text { display: none; font-weight: 700; color: var(--green); }
+  .quiz-answer.revealed .hidden-text { display: inline; }
+  .quiz-answer .placeholder { color: var(--ink-soft); }
+  .quiz-answer.revealed .placeholder { display: none; }
+
+  /* ── Tip box ── */
+  .tip-box {
+    background: #EEF4FF;
+    border-left: 4px solid var(--blue);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 16px 20px;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+  }
+  .tip-box strong { color: var(--blue); }
+
+  /* ── Next lesson teaser ── */
+  .next-lesson {
+    background: var(--blue);
+    color: #fff;
+    border-radius: var(--radius);
+    padding: 28px 32px;
+    margin-top: 48px;
+    font-family: 'Arial', sans-serif;
+  }
+  .next-lesson h2 { color: var(--yellow); border-bottom-color: var(--yellow); font-size: 20px; }
+  .next-lesson ul { margin: 12px 0 0 20px; }
+  .next-lesson li { margin-bottom: 6px; font-size: 15px; }
+
+  /* ── Course progress bar ── */
+  .progress-bar {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 22px;
+    margin-top: 36px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+  }
+  .progress-label { font-weight: 700; margin-bottom: 10px; color: var(--ink); }
+  .bar-track {
+    background: var(--border);
+    border-radius: 99px;
+    height: 10px;
+    overflow: hidden;
+  }
+  .bar-fill {
+    background: linear-gradient(90deg, var(--blue), #00A3E0);
+    width: 10%;
+    height: 100%;
+    border-radius: 99px;
+  }
+  .bar-note { margin-top: 8px; color: var(--ink-soft); }
+
+  @media (max-width: 540px) {
+    .word-grid { grid-template-columns: 1fr 1fr; }
+    .hero h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<div class="hero">
+  <span class="series-label">Swedish for Expats · Lesson 1 of 10</span>
+  <h1>Swedish Greetings You'll Use from Your Very First Day</h1>
+  <p>No textbooks. No complicated grammar. Just the words you'll actually need — at the door, at work, and at the supermarket.</p>
+  <div class="meta">By Lahiru &nbsp;·&nbsp; Expat in Sweden &nbsp;·&nbsp; 8 min read</div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     WRAP STARTS
+══════════════════════════════════════════ -->
+<div class="wrap">
+
+  <!-- Course progress -->
+  <div class="progress-bar">
+    <div class="progress-label">📚 Swedish for Expats — Course Progress</div>
+    <div class="bar-track"><div class="bar-fill"></div></div>
+    <div class="bar-note">Lesson 1 of 10 complete &nbsp;·&nbsp; You are just getting started — keep going!</div>
+  </div>
+
+  <!-- Intro -->
+  <section>
+    <div class="expat-note">
+      <strong>👋 A note from me:</strong> I moved to Sweden as an expat and quickly realised that knowing even a handful of Swedish words changes everything. People's faces light up. You stop feeling invisible. This series is what I wish I had on day one — practical, honest, and short enough to actually finish.
+    </div>
+
+    <p>Swedish people speak excellent English, so you will never be stuck. But the moment you say <em>Hej</em> instead of <em>Hello</em>, something shifts. You are no longer just a visitor — you are trying, and Swedes notice that.</p>
+
+    <p>In this first lesson, we cover the greetings you will use every single day: saying hello, saying goodbye, asking how someone is, and a handful of words that will save you in awkward moments.</p>
+
+    <p><strong>Time to complete:</strong> 10–15 minutes &nbsp;·&nbsp; <strong>Words learned:</strong> 10</p>
+  </section>
+
+  <!-- The words -->
+  <section>
+    <h2>The Core Greetings</h2>
+    <p>Learn these six first. You will use all of them within your first week in Sweden.</p>
+
+    <div class="word-grid">
+
+      <div class="word-card">
+        <div class="swedish">Hej</div>
+        <div class="english">Hello / Hi</div>
+        <div class="pronunciation">🔊 Sounds like: "Hay"</div>
+        <div class="example">Use any time, with anyone. Sweden's most universal word.</div>
+      </div>
+
+      <div class="word-card">
+        <div class="swedish">Hej då</div>
+        <div class="english">Goodbye</div>
+        <div class="pronunciation">🔊 Sounds like: "Hay-daw"</div>
+        <div class="example">The friendly way to say bye — at the shop, leaving a meeting, anywhere.</div>
+      </div>
+
+      <div class="word-card">
+        <div class="swedish">God morgon</div>
+        <div class="english">Good morning</div>
+        <div class="pronunciation">🔊 Sounds like: "Goo mor-on"</div>
+        <div class="example">Use until around noon. Your colleagues will love it.</div>
+      </div>
+
+      <div class="word-card">
+        <div class="swedish">God kväll</div>
+        <div class="english">Good evening</div>
+        <div class="pronunciation">🔊 Sounds like: "Goo kvell"</div>
+        <div class="example">After about 6 PM. Great at restaurants or evening events.</div>
+      </div>
+
+      <div class="word-card">
+        <div class="swedish">Tack</div>
+        <div class="english">Thank you</div>
+        <div class="pronunciation">🔊 Sounds like: "Tack" (rhymes with "back")</div>
+        <div class="example">The single most useful word in Sweden. Say it often.</div>
+      </div>
+
+      <div class="word-card">
+        <div class="swedish">Ursäkta</div>
+        <div class="english">Excuse me / Sorry</div>
+        <div class="pronunciation">🔊 Sounds like: "Oor-sek-ta"</div>
+        <div class="example">To get past someone, get attention, or apologise lightly.</div>
+      </div>
+
+    </div>
+
+    <div class="tip-box">
+      <strong>💡 Expat tip:</strong> <em>Tack</em> does a lot of heavy lifting in Swedish. It means thank you, but Swedes also say it to acknowledge information ("Oh, tack"), to end a conversation politely, and even to say "here you go" when handing something over. When in doubt — say Tack.
+    </div>
+  </section>
+
+  <!-- Asking how someone is -->
+  <section>
+    <h2>Asking How Someone Is</h2>
+    <p>After the first <em>Hej</em>, the next natural step is asking how someone is. Here is what you need.</p>
+
+    <table class="vocab-table">
+      <thead>
+        <tr><th>Swedish</th><th>English</th><th>When to use it</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hur mår du?</td>
+          <td>How are you?</td>
+          <td>Casual — friends, colleagues, neighbours</td>
+        </tr>
+        <tr>
+          <td>Jag mår bra.</td>
+          <td>I am fine.</td>
+          <td>Standard reply — always works</td>
+        </tr>
+        <tr>
+          <td>Jag mår mycket bra.</td>
+          <td>I am very well.</td>
+          <td>When you want to sound enthusiastic</td>
+        </tr>
+        <tr>
+          <td>Och du?</td>
+          <td>And you?</td>
+          <td>Bounce the question back — very natural</td>
+        </tr>
+        <tr>
+          <td>Jag mår också bra.</td>
+          <td>I am also fine.</td>
+          <td>When replying after being asked back</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="tip-box">
+      <strong>💡 Culture note:</strong> Swedes tend to answer <em>Hur mår du?</em> briefly and honestly — not the way some cultures give an automatic "fine, thanks!" Don't be surprised if a Swede says "Actually, a bit tired today." It is refreshingly genuine.
+    </div>
+  </section>
+
+  <!-- Conversation example -->
+  <section>
+    <h2>A Real Conversation</h2>
+    <p>Here is how these words come together. Read it out loud — pronunciation matters more than perfection.</p>
+
+    <div class="conversation">
+      <div class="line">
+        <span class="speaker">Anna:</span> Hej!
+        <div class="translation">Hello!</div>
+      </div>
+      <div class="line">
+        <span class="speaker">Erik:</span> Hej! Hur mår du?
+        <div class="translation">Hello! How are you?</div>
+      </div>
+      <div class="line">
+        <span class="speaker">Anna:</span> Jag mår bra. Och du?
+        <div class="translation">I am fine. And you?</div>
+      </div>
+      <div class="line">
+        <span class="speaker">Erik:</span> Jag mår också bra. Tack!
+        <div class="translation">I am also fine. Thank you!</div>
+      </div>
+      <hr>
+      <div style="font-size:13px; color: var(--ink-soft); font-style: italic;">
+        Read this conversation three times. By the third time, it will start to feel natural.
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick reference -->
+  <section>
+    <h2>Your Quick Reference Card</h2>
+    <p>Bookmark this or screenshot it — it will be useful in your first weeks.</p>
+
+    <table class="vocab-table">
+      <thead>
+        <tr><th>Swedish</th><th>English</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Hej</td><td>Hello / Hi</td></tr>
+        <tr><td>Hej då</td><td>Goodbye</td></tr>
+        <tr><td>God morgon</td><td>Good morning</td></tr>
+        <tr><td>God kväll</td><td>Good evening</td></tr>
+        <tr><td>Tack</td><td>Thank you</td></tr>
+        <tr><td>Ja</td><td>Yes</td></tr>
+        <tr><td>Nej</td><td>No</td></tr>
+        <tr><td>Ursäkta</td><td>Excuse me</td></tr>
+        <tr><td>Förlåt</td><td>Sorry (deeper apology)</td></tr>
+        <tr><td>Hur mår du?</td><td>How are you?</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Practice quiz -->
+  <section>
+    <div class="quiz-block">
+      <h3>✏️ Quick Practice — Translate into Swedish</h3>
+      <p style="font-size:14px; color: var(--ink-soft);">Tap each answer to reveal. Try to answer first before you look!</p>
+
+      <div class="quiz-question">1. Hello</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')">
+        <span class="placeholder">Your answer...</span>
+        <span class="hidden-text">Hej</span>
+      </div>
+
+      <div class="quiz-question">2. Goodbye</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')">
+        <span class="placeholder">Your answer...</span>
+        <span class="hidden-text">Hej då</span>
+      </div>
+
+      <div class="quiz-question">3. Thank you</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')">
+        <span class="placeholder">Your answer...</span>
+        <span class="hidden-text">Tack</span>
+      </div>
+
+      <div class="quiz-question">4. How are you?</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')">
+        <span class="placeholder">Your answer...</span>
+        <span class="hidden-text">Hur mår du?</span>
+      </div>
+
+      <div class="quiz-question">5. I am very well.</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')">
+        <span class="placeholder">Your answer...</span>
+        <span class="hidden-text">Jag mår mycket bra.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal challenge -->
+  <section>
+    <h2>Your Challenge This Week</h2>
+    <div class="expat-note">
+      <strong>🎯 Try this:</strong> Over the next 7 days, say <em>Hej</em> to your neighbour, <em>Tack</em> at every shop, and <em>God morgon</em> to one colleague. That is all. Just three words, repeated every day. You will be surprised how quickly it starts to feel natural — and how warmly people respond.
+    </div>
+  </section>
+
+  <!-- Next lesson -->
+  <div class="next-lesson">
+    <h2>Coming Up — Lesson 2: Introducing Yourself</h2>
+    <p style="font-size:15px; margin-top: 8px;">In the next lesson you will learn:</p>
+    <ul>
+      <li>Jag heter… — My name is…</li>
+      <li>Vad heter du? — What is your name?</li>
+      <li>Var kommer du ifrån? — Where are you from?</li>
+      <li>Jag bor i Sverige. — I live in Sweden.</li>
+    </ul>
+    <p style="margin-top:16px; font-size:14px; opacity:0.8;">Subscribe below to get notified when Lesson 2 goes live.</p>
+  </div>
+
+</div><!-- end wrap -->
+
+<!--
+═══════════════════════════════════════════════════════════════════════
+WORDPRESS PUBLISHING NOTES (remove before publishing)
+═══════════════════════════════════════════════════════════════════════
+
+1. SEO PLUGIN (Yoast / RankMath):
+   - Focus keyword: "Swedish greetings for expats"
+   - Meta title: Swedish for Expats – Lesson 1: Greetings You'll Use from Day One
+   - Meta description: Moving to Sweden? Learn the Swedish greetings you'll actually need —
+     Hej, God morgon, Tack and more. A practical lesson series written by an expat, for expats.
+
+2. CATEGORIES & TAGS:
+   - Category: Learn Swedish
+   - Tags: Swedish language, expat life, Sweden, Swedish for beginners, language learning
+
+3. FEATURED IMAGE SUGGESTION:
+   - Swedish flag background with text overlay: "Hej! 👋 Lesson 1: Greetings"
+   - Tools: Canva (free), Snappa, or Adobe Express
+
+4. INTERNAL LINKING:
+   - Add links to Lesson 2, 3… as you publish them
+   - Link from your "About" page to this series
+
+5. CALL TO ACTION (add at bottom in WordPress):
+   - Email subscription form (Mailchimp / ConvertKit)
+   - Comment prompt: "Which Swedish word will you try first? Tell me below!"
+
+6. TO USE THIS HTML IN WORDPRESS:
+   - Paste the body content into a Custom HTML block, OR
+   - Use a page builder like Elementor to recreate the sections
+   - The styling here is self-contained — it will work in any custom HTML block
+
+═══════════════════════════════════════════════════════════════════════
+-->
+
+</body>
+</html>
