@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO META TAGS -->
+<title>Swedish for Expats – Lesson 2: Introducing Yourself in Swedish</title>
+<meta name="description" content="Learn how to introduce yourself in Swedish. My name is, What is your name, Where are you from — practical phrases for expats living in Sweden.">
+<meta name="keywords" content="introduce yourself in Swedish, Swedish for expats, my name is Swedish, Swedish beginner phrases, learn Swedish Sweden">
+
+<meta property="og:title" content="Swedish for Expats – Lesson 2: Introducing Yourself">
+<meta property="og:description" content="Learn how to say your name, where you're from, and where you live — in Swedish. Written by an expat, for expats.">
+<meta property="og:type" content="article">
+
+<style>
+  :root {
+    --blue:       #006AA7;
+    --yellow:     #FECC02;
+    --yellow-soft:#FFF8D6;
+    --ink:        #1A1A2E;
+    --ink-soft:   #4A4A6A;
+    --surface:    #FFFFFF;
+    --bg:         #F7F9FC;
+    --border:     #E2E8F0;
+    --green:      #1E7D5A;
+    --green-soft: #E8F5EE;
+    --radius:     10px;
+    --shadow:     0 2px 12px rgba(0,106,167,0.08);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Georgia', serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.75;
+  }
+
+  .wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    background: var(--blue);
+    color: #fff;
+    padding: 56px 20px 48px;
+    text-align: center;
+  }
+  .hero::before {
+    content: "🤝";
+    font-size: 80px;
+    display: block;
+    margin-bottom: 16px;
+    line-height: 1;
+  }
+  .hero .series-label {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: var(--yellow);
+    color: var(--ink);
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: clamp(26px, 5vw, 40px);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 16px;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero p {
+    font-size: 17px;
+    opacity: 0.9;
+    max-width: 520px;
+    margin: 0 auto 24px;
+    font-family: 'Arial', sans-serif;
+  }
+  .hero .meta {
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    opacity: 0.7;
+  }
+
+  /* ── Nav ── */
+  .lesson-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .lesson-nav a {
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .lesson-nav a:hover { text-decoration: underline; }
+  .lesson-nav .current { color: var(--ink-soft); }
+
+  section { margin-top: 48px; }
+
+  h2 {
+    font-size: 24px;
+    color: var(--blue);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid var(--yellow);
+    display: inline-block;
+  }
+
+  h3 { font-size: 19px; margin: 28px 0 10px; color: var(--ink); }
+
+  p { margin-bottom: 14px; font-size: 16.5px; }
+
+  .expat-note {
+    background: var(--yellow-soft);
+    border-left: 4px solid var(--yellow);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 18px 22px;
+    margin: 28px 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    color: var(--ink-soft);
+  }
+  .expat-note strong { color: var(--ink); }
+
+  /* ── Word cards ── */
+  .word-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .word-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 18px;
+    box-shadow: var(--shadow);
+    transition: transform 0.15s;
+  }
+  .word-card:hover { transform: translateY(-2px); }
+  .word-card .swedish { font-size: 22px; font-weight: 700; color: var(--blue); margin-bottom: 4px; }
+  .word-card .english { font-family: 'Arial', sans-serif; font-size: 14px; color: var(--ink-soft); margin-bottom: 8px; }
+  .word-card .pronunciation {
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    background: var(--yellow-soft);
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #7A6000;
+    margin-bottom: 10px;
+  }
+  .word-card .example { font-size: 14px; font-style: italic; color: var(--ink-soft); border-top: 1px solid var(--border); padding-top: 10px; margin-top: 4px; }
+
+  /* ── Fill-in card (for name substitution) ── */
+  .fill-card {
+    background: var(--surface);
+    border: 2px dashed var(--blue);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  .fill-card .template { font-size: 22px; font-weight: 700; color: var(--blue); margin-bottom: 8px; }
+  .fill-card .fill-label { font-size: 13px; color: var(--ink-soft); margin-bottom: 12px; }
+  .fill-card input {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    width: 200px;
+    outline: none;
+    color: var(--ink);
+  }
+  .fill-card input:focus { border-color: var(--blue); }
+  .fill-card .result {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--green);
+    min-height: 28px;
+  }
+
+  /* ── Vocab table ── */
+  .vocab-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: var(--surface);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+  }
+  .vocab-table thead { background: var(--blue); color: #fff; }
+  .vocab-table th, .vocab-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border); }
+  .vocab-table td:first-child { font-weight: 700; color: var(--blue); }
+  .vocab-table tr:last-child td { border-bottom: none; }
+  .vocab-table tr:nth-child(even) { background: var(--bg); }
+
+  /* ── Conversation ── */
+  .conversation {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    box-shadow: var(--shadow);
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  .conversation .line { margin-bottom: 12px; font-size: 15.5px; }
+  .conversation .speaker { font-weight: 700; color: var(--blue); }
+  .conversation .translation { font-size: 13px; color: var(--ink-soft); font-style: italic; margin-top: 2px; }
+  .conversation hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+
+  /* ── Formal vs informal box ── */
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .compare-card {
+    border-radius: var(--radius);
+    padding: 20px 18px;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+  }
+  .compare-card.formal { background: #EEF4FF; border: 1px solid #C5D8F0; }
+  .compare-card.informal { background: var(--green-soft); border: 1px solid #B2DFCE; }
+  .compare-card h4 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+  .compare-card.formal h4 { color: var(--blue); }
+  .compare-card.informal h4 { color: var(--green); }
+  .compare-card .phrase { font-weight: 700; font-size: 17px; margin-bottom: 4px; }
+  .compare-card .meaning { color: var(--ink-soft); font-size: 13px; }
+  .compare-item { margin-bottom: 14px; }
+
+  /* ── Quiz ── */
+  .quiz-block {
+    background: var(--green-soft);
+    border: 1px solid #B2DFCE;
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin-top: 24px;
+    font-family: 'Arial', sans-serif;
+  }
+  .quiz-block h3 { color: var(--green); margin-top: 0; font-size: 18px; }
+  .quiz-question { margin: 14px 0 6px; font-weight: 600; font-size: 15px; }
+  .quiz-answer {
+    background: var(--surface);
+    border: 1px solid #B2DFCE;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 15px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .quiz-answer::after { content: "👁 Tap to reveal"; font-size: 12px; color: var(--green); margin-left: 8px; }
+  .quiz-answer.revealed::after { content: ""; }
+  .quiz-answer .hidden-text { display: none; font-weight: 700; color: var(--green); }
+  .quiz-answer.revealed .hidden-text { display: inline; }
+  .quiz-answer .placeholder { color: var(--ink-soft); }
+  .quiz-answer.revealed .placeholder { display: none; }
+
+  /* ── Tip box ── */
+  .tip-box {
+    background: #EEF4FF;
+    border-left: 4px solid var(--blue);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 16px 20px;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+  }
+  .tip-box strong { color: var(--blue); }
+
+  /* ── Progress bar ── */
+  .progress-bar {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 22px;
+    margin-top: 36px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+  }
+  .progress-label { font-weight: 700; margin-bottom: 10px; color: var(--ink); }
+  .bar-track { background: var(--border); border-radius: 99px; height: 10px; overflow: hidden; }
+  .bar-fill { background: linear-gradient(90deg, var(--blue), #00A3E0); width: 20%; height: 100%; border-radius: 99px; }
+  .bar-note { margin-top: 8px; color: var(--ink-soft); }
+
+  /* ── Next lesson ── */
+  .next-lesson {
+    background: var(--blue);
+    color: #fff;
+    border-radius: var(--radius);
+    padding: 28px 32px;
+    margin-top: 48px;
+    font-family: 'Arial', sans-serif;
+  }
+  .next-lesson h2 { color: var(--yellow); border-bottom-color: var(--yellow); font-size: 20px; }
+  .next-lesson ul { margin: 12px 0 0 20px; }
+  .next-lesson li { margin-bottom: 6px; font-size: 15px; }
+  .next-lesson a {
+    display: inline-block;
+    margin-top: 20px;
+    background: var(--yellow);
+    color: var(--ink);
+    font-weight: 700;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+  }
+  .next-lesson a:hover { opacity: 0.9; }
+
+  @media (max-width: 540px) {
+    .word-grid { grid-template-columns: 1fr 1fr; }
+    .compare-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 24px; }
+    .fill-card input { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Lesson nav -->
+<div class="lesson-nav">
+  <a href="index.html">← Lesson 1: Greetings</a>
+  <span class="current">📖 Lesson 2: Introducing Yourself</span>
+  <span style="color: var(--ink-soft);">Lesson 3 coming soon →</span>
+</div>
+
+<!-- Hero -->
+<div class="hero">
+  <span class="series-label">Swedish for Expats · Lesson 2 of 10</span>
+  <h1>How to Introduce Yourself in Swedish</h1>
+  <p>Your name, where you're from, where you live — the four sentences every expat needs in the first week.</p>
+  <div class="meta">Expat in Sweden &nbsp;·&nbsp; 10 min read</div>
+</div>
+
+<div class="wrap">
+
+  <!-- Progress -->
+  <div class="progress-bar">
+    <div class="progress-label">📚 Swedish for Expats — Course Progress</div>
+    <div class="bar-track"><div class="bar-fill"></div></div>
+    <div class="bar-note">Lesson 2 of 10 &nbsp;·&nbsp; 2 lessons done — you are building momentum!</div>
+  </div>
+
+  <!-- Intro -->
+  <section>
+    <div class="expat-note">
+      <strong>👋 From my experience:</strong> The first thing anyone asks when you meet them in Sweden is <em>"Vad heter du?"</em> — what is your name. Then almost immediately: <em>"Var kommer du ifrån?"</em> — where are you from. These two questions will follow you everywhere — at work, at fika, at your neighbour's door. This lesson gets you ready for all of it.
+    </div>
+
+    <p>In <a href="index.html" style="color:var(--blue);">Lesson 1</a> you learned how to greet people. Now we go one step further — introducing yourself properly. By the end of this lesson you will be able to hold a short but complete introduction in Swedish.</p>
+
+    <p><strong>Time to complete:</strong> 10–15 minutes &nbsp;·&nbsp; <strong>Phrases learned:</strong> 12</p>
+  </section>
+
+  <!-- Core phrases -->
+  <section>
+    <h2>The Core Introduction Phrases</h2>
+    <p>These are the building blocks of any self-introduction in Swedish.</p>
+
+    <div class="word-grid">
+
+      <div class="word-card">
+        <div class="swedish">Jag heter…</div>
+        <div class="english">My name is…</div>
+        <div class="pronunciation">🔊 "Yag heh-ter"</div>
+        <div class="example">Jag heter Lahiru. &nbsp;→&nbsp; My name is Lahiru.</div>
+      </div>
+
+      <div class="word-card">
+        <div class="swedish">Vad heter du?</div>
+        <div class="english">What is your name?</div>
+        <div class="pronunciation">🔊 "Vad heh-ter doo"</div>
+        <div class="example">Ask this when meeting someone new.</div>
+      </div>
+
+      <div class="word-card">
+        <div class="swedish">Var kommer du ifrån?</div>
+        <div class="english">Where are you from?</div>
+        <div class="pronunciation">🔊 "Var kom-er doo ee-frawn"</div>
+        <div class="example">You will hear this constantly as an expat.</div>
+      </div>
+
+      <div class="word-card">
+        <div class="swedish">Jag kommer från…</div>
+        <div class="english">I come from…</div>
+        <div class="pronunciation">🔊 "Yag kom-er frawn"</div>
+        <div class="example">Jag kommer från Sri Lanka.</div>
+      </div>
+
+      <div class="word-card">
+        <div class="swedish">Jag bor i…</div>
+        <div class="english">I live in…</div>
+        <div class="pronunciation">🔊 "Yag boor ee"</div>
+        <div class="example">Jag bor i Stockholm.</div>
+      </div>
+
+      <div class="word-card">
+        <div class="swedish">Trevligt att träffas!</div>
+        <div class="english">Nice to meet you!</div>
+        <div class="pronunciation">🔊 "Trev-ligt at tref-as"</div>
+        <div class="example">Say this at the end of any introduction.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Try it with your name -->
+  <section>
+    <h2>Try It With Your Own Name</h2>
+    <p>Type your name below and see your Swedish introduction instantly.</p>
+
+    <div class="fill-card">
+      <div class="template">Jag heter ___</div>
+      <div class="fill-label">Type your name:</div>
+      <input type="text" id="nameInput" placeholder="Your name" oninput="updateName()">
+      <div class="result" id="nameResult"></div>
+    </div>
+
+    <script>
+      function updateName() {
+        const name = document.getElementById('nameInput').value.trim();
+        const result = document.getElementById('nameResult');
+        if (name) {
+          result.textContent = '✅ Jag heter ' + name + '.';
+        } else {
+          result.textContent = '';
+        }
+      }
+    </script>
+
+    <div class="tip-box">
+      <strong>💡 Good news:</strong> Swedish people will never struggle with your name the way some cultures do. They are very used to international names. Just say it naturally — they will repeat it back to you politely and correctly.
+    </div>
+  </section>
+
+  <!-- Formal vs informal -->
+  <section>
+    <h2>Formal vs Informal — Does It Matter?</h2>
+    <p>Swedish is one of the most informal languages in Europe. The formal "you" (<em>Ni</em>) almost completely disappeared in the 1960s–70s during a social movement called <em>du-reformen</em>. Today nearly everyone uses <em>du</em> — even with strangers, bosses, and the king.</p>
+
+    <div class="compare-grid">
+      <div class="compare-card informal">
+        <h4>✅ Everyday (use this)</h4>
+        <div class="compare-item">
+          <div class="phrase">Vad heter du?</div>
+          <div class="meaning">What is your name? (casual)</div>
+        </div>
+        <div class="compare-item">
+          <div class="phrase">Var kommer du ifrån?</div>
+          <div class="meaning">Where are you from?</div>
+        </div>
+        <div class="compare-item">
+          <div class="phrase">Hur mår du?</div>
+          <div class="meaning">How are you?</div>
+        </div>
+      </div>
+      <div class="compare-card formal">
+        <h4>🏛 Formal (rare, very polite)</h4>
+        <div class="compare-item">
+          <div class="phrase">Vad heter ni?</div>
+          <div class="meaning">What is your name? (formal)</div>
+        </div>
+        <div class="compare-item">
+          <div class="phrase">Var kommer ni ifrån?</div>
+          <div class="meaning">Where are you from? (formal)</div>
+        </div>
+        <div class="compare-item">
+          <div class="phrase">Hur mår ni?</div>
+          <div class="meaning">How are you? (formal)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <strong>💡 Expat tip:</strong> Don't overthink formal vs informal. Use <em>du</em> with everyone — your landlord, your doctor, the cashier. If you accidentally use <em>Ni</em> with a Swede under 70, they might even find it a little funny.
+    </div>
+  </section>
+
+  <!-- Full vocabulary table -->
+  <section>
+    <h2>Full Vocabulary Reference</h2>
+
+    <table class="vocab-table">
+      <thead>
+        <tr><th>Swedish</th><th>English</th><th>Example</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Jag heter…</td><td>My name is…</td><td>Jag heter Anna.</td></tr>
+        <tr><td>Vad heter du?</td><td>What is your name?</td><td>—</td></tr>
+        <tr><td>Var kommer du ifrån?</td><td>Where are you from?</td><td>—</td></tr>
+        <tr><td>Jag kommer från…</td><td>I come from…</td><td>Jag kommer från Indien.</td></tr>
+        <tr><td>Jag bor i…</td><td>I live in…</td><td>Jag bor i Göteborg.</td></tr>
+        <tr><td>Jag jobbar i…</td><td>I work in…</td><td>Jag jobbar i Stockholm.</td></tr>
+        <tr><td>Trevligt att träffas!</td><td>Nice to meet you!</td><td>—</td></tr>
+        <tr><td>Även trevligt!</td><td>Nice to meet you too!</td><td>—</td></tr>
+        <tr><td>Jag är ny här.</td><td>I am new here.</td><td>Very useful as an expat!</td></tr>
+        <tr><td>Jag lär mig svenska.</td><td>I am learning Swedish.</td><td>People love hearing this.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="expat-note" style="margin-top:20px;">
+      <strong>🌟 Secret weapon:</strong> Say <em>"Jag lär mig svenska"</em> (I am learning Swedish) whenever you can. Swedes genuinely appreciate the effort and will often slow down, help you, and switch to simpler words. It opens doors.
+    </div>
+  </section>
+
+  <!-- Full conversation -->
+  <section>
+    <h2>A Full Introduction Conversation</h2>
+    <p>Here is a realistic conversation you might have at work, at a party, or with a new neighbour. Read it out loud at least twice.</p>
+
+    <div class="conversation">
+      <div class="line">
+        <span class="speaker">Erik:</span> Hej! Jag heter Erik. Vad heter du?
+        <div class="translation">Hello! My name is Erik. What is your name?</div>
+      </div>
+      <div class="line">
+        <span class="speaker">Lahiru:</span> Hej! Jag heter Lahiru. Trevligt att träffas!
+        <div class="translation">Hello! My name is Lahiru. Nice to meet you!</div>
+      </div>
+      <div class="line">
+        <span class="speaker">Erik:</span> Även trevligt! Var kommer du ifrån?
+        <div class="translation">Nice to meet you too! Where are you from?</div>
+      </div>
+      <div class="line">
+        <span class="speaker">Lahiru:</span> Jag kommer från Sri Lanka. Jag bor i Stockholm nu.
+        <div class="translation">I come from Sri Lanka. I live in Stockholm now.</div>
+      </div>
+      <div class="line">
+        <span class="speaker">Erik:</span> Åh, vad kul! Hur länge har du bott här?
+        <div class="translation">Oh, how fun! How long have you lived here?</div>
+      </div>
+      <div class="line">
+        <span class="speaker">Lahiru:</span> Inte så länge. Jag lär mig svenska!
+        <div class="translation">Not so long. I am learning Swedish!</div>
+      </div>
+      <div class="line">
+        <span class="speaker">Erik:</span> Det är jättebra! Välkommen till Sverige!
+        <div class="translation">That is great! Welcome to Sweden!</div>
+      </div>
+      <hr>
+      <div style="font-size:13px; color: var(--ink-soft); font-style: italic;">
+        Don't worry about understanding every word yet. Focus on the bold phrases you have already learned — they carry the whole conversation.
+      </div>
+    </div>
+
+    <div class="tip-box" style="margin-top:20px;">
+      <strong>💡 New words from the conversation:</strong> &nbsp;
+      <em>Åh, vad kul!</em> = Oh, how fun! &nbsp;·&nbsp;
+      <em>Inte så länge</em> = Not so long &nbsp;·&nbsp;
+      <em>Jättebra</em> = Great / Very good &nbsp;·&nbsp;
+      <em>Välkommen</em> = Welcome
+    </div>
+  </section>
+
+  <!-- Practice quiz -->
+  <section>
+    <div class="quiz-block">
+      <h3>✏️ Quick Practice — Translate into Swedish</h3>
+      <p style="font-size:14px; color: var(--ink-soft);">Try to answer before you tap to reveal!</p>
+
+      <div class="quiz-question">1. My name is [your name].</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')">
+        <span class="placeholder">Your answer...</span>
+        <span class="hidden-text">Jag heter [your name].</span>
+      </div>
+
+      <div class="quiz-question">2. What is your name?</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')">
+        <span class="placeholder">Your answer...</span>
+        <span class="hidden-text">Vad heter du?</span>
+      </div>
+
+      <div class="quiz-question">3. Where are you from?</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')">
+        <span class="placeholder">Your answer...</span>
+        <span class="hidden-text">Var kommer du ifrån?</span>
+      </div>
+
+      <div class="quiz-question">4. I come from [your country].</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')">
+        <span class="placeholder">Your answer...</span>
+        <span class="hidden-text">Jag kommer från [your country].</span>
+      </div>
+
+      <div class="quiz-question">5. I live in Stockholm.</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')">
+        <span class="placeholder">Your answer...</span>
+        <span class="hidden-text">Jag bor i Stockholm.</span>
+      </div>
+
+      <div class="quiz-question">6. Nice to meet you!</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')">
+        <span class="placeholder">Your answer...</span>
+        <span class="hidden-text">Trevligt att träffas!</span>
+      </div>
+
+      <div class="quiz-question">7. I am learning Swedish.</div>
+      <div class="quiz-answer" onclick="this.classList.toggle('revealed')">
+        <span class="placeholder">Your answer...</span>
+        <span class="hidden-text">Jag lär mig svenska.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Challenge -->
+  <section>
+    <h2>Your Challenge This Week</h2>
+    <div class="expat-note">
+      <strong>🎯 Try this:</strong> The next time someone new asks your name — at work, at a shop, anywhere — answer fully in Swedish. <em>Jag heter [name]. Jag kommer från [country]. Jag bor i [city].</em> Three sentences. That is a complete introduction. You will feel the difference immediately.
+    </div>
+  </section>
+
+  <!-- Next lesson -->
+  <div class="next-lesson">
+    <h2>Coming Up — Lesson 3: Numbers 1–20</h2>
+    <p style="font-size:15px; margin-top: 8px;">In the next lesson you will learn:</p>
+    <ul>
+      <li>Numbers 1–20 in Swedish</li>
+      <li>How to say your age — Jag är [age] år</li>
+      <li>Asking for prices at a shop</li>
+      <li>Understanding bus numbers and floor numbers</li>
+    </ul>
+    <a href="lesson-3.html">Go to Lesson 3 →</a>
+  </div>
+
+</div><!-- end wrap -->
+
+<!--
+═══════════════════════════════════════════════════════════════════════
+WORDPRESS / GITHUB PAGES PUBLISHING NOTES
+═══════════════════════════════════════════════════════════════════════
+
+SEO PLUGIN SETTINGS:
+  Focus keyword : "introduce yourself in Swedish"
+  Meta title    : Swedish for Expats – Lesson 2: Introducing Yourself in Swedish
+  Meta desc     : Learn how to say your name, where you're from, and where you live
+                  in Swedish. Practical phrases for expats in Sweden.
+
+GITHUB PAGES:
+  Save this file as: lesson-2.html
+  Update index.html: add a link → <a href="lesson-2.html">Lesson 2: Introducing Yourself</a>
+  Update lesson-1 (index.html) next-lesson button href to: lesson-2.html
+
+INTERNAL LINKS TO ADD:
+  - Link "Lesson 1" text in intro → index.html  ✅ (already done)
+  - "Go to Lesson 3" button → lesson-3.html     ✅ (already done, update when ready)
+
+═══════════════════════════════════════════════════════════════════════
+-->
+
+</body>
+</html>
